@@ -1,0 +1,697 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6404080E2613C433008978D5 /* LoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6404080D2613C433008978D5 /* LoadingViewController.swift */; };
+		6404081326165E7F008978D5 /* FrontPicture_Never_late.png in Resources */ = {isa = PBXBuildFile; fileRef = 6404081226165E7F008978D5 /* FrontPicture_Never_late.png */; };
+		642E186E262236B900C81F16 /* NotesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 642E186D262236B800C81F16 /* NotesViewController.swift */; };
+		643E246E26682AD500EF4FE3 /* lines-large.png in Resources */ = {isa = PBXBuildFile; fileRef = 643E246C26682AD400EF4FE3 /* lines-large.png */; };
+		643E246F26682AD500EF4FE3 /* dots-large.png in Resources */ = {isa = PBXBuildFile; fileRef = 643E246D26682AD400EF4FE3 /* dots-large.png */; };
+		643F84E926127E89004DBFAC /* AddNewItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 643F84E826127E89004DBFAC /* AddNewItemViewController.swift */; };
+		643F84EE261361E8004DBFAC /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 643F84ED261361E8004DBFAC /* DataManager.swift */; };
+		645A0CD226336E11007D5F86 /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 645A0CD126336E11007D5F86 /* InfoViewController.swift */; };
+		645A0CD726360561007D5F86 /* NewNoteOptionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 645A0CD626360561007D5F86 /* NewNoteOptionsViewController.swift */; };
+		6479728F2638114C0033128D /* SortViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6479728E2638114C0033128D /* SortViewController.swift */; };
+		647972972638A61D0033128D /* DrawingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 647972962638A61D0033128D /* DrawingModel.swift */; };
+		647972AC263C042A0033128D /* lines.png in Resources */ = {isa = PBXBuildFile; fileRef = 647972AB263C04290033128D /* lines.png */; };
+		647972B1263C9C290033128D /* FilterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 647972B0263C9C290033128D /* FilterViewController.swift */; };
+		647972BC2643C9310033128D /* CalendarModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 647972BB2643C92F0033128D /* CalendarModel.swift */; };
+		64DD5826264467E2008C7543 /* FullCalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64DD5825264467E2008C7543 /* FullCalendarViewController.swift */; };
+		64E6AA2B2678F28C009FCA39 /* dots2.png in Resources */ = {isa = PBXBuildFile; fileRef = 64E6AA2A2678F28A009FCA39 /* dots2.png */; };
+		64E6AA2D2678F340009FCA39 /* dots.png in Resources */ = {isa = PBXBuildFile; fileRef = 64E6AA2C2678F33E009FCA39 /* dots.png */; };
+		64F1114B260F48E900E6FEA7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64F1114A260F48E900E6FEA7 /* AppDelegate.swift */; };
+		64F1114D260F48E900E6FEA7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64F1114C260F48E900E6FEA7 /* SceneDelegate.swift */; };
+		64F1114F260F48E900E6FEA7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64F1114E260F48E900E6FEA7 /* ViewController.swift */; };
+		64F11152260F48E900E6FEA7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 64F11150260F48E900E6FEA7 /* Main.storyboard */; };
+		64F11155260F48E900E6FEA7 /* Never_late.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 64F11153260F48E900E6FEA7 /* Never_late.xcdatamodeld */; };
+		64F11157260F48EA00E6FEA7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 64F11156260F48EA00E6FEA7 /* Assets.xcassets */; };
+		64F1115A260F48EA00E6FEA7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 64F11158260F48EA00E6FEA7 /* LaunchScreen.storyboard */; };
+		64F11165260F48EA00E6FEA7 /* Never_lateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64F11164260F48EA00E6FEA7 /* Never_lateTests.swift */; };
+		64F11170260F48EA00E6FEA7 /* Never_lateUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64F1116F260F48EA00E6FEA7 /* Never_lateUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		64F11161260F48EA00E6FEA7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 64F1113F260F48E900E6FEA7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 64F11146260F48E900E6FEA7;
+			remoteInfo = "Never late";
+		};
+		64F1116C260F48EA00E6FEA7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 64F1113F260F48E900E6FEA7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 64F11146260F48E900E6FEA7;
+			remoteInfo = "Never late";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		6404080D2613C433008978D5 /* LoadingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingViewController.swift; sourceTree = "<group>"; };
+		6404081226165E7F008978D5 /* FrontPicture_Never_late.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FrontPicture_Never_late.png; sourceTree = "<group>"; };
+		642E1869261D07F500C81F16 /* Never_late 2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "Never_late 2.xcdatamodel"; sourceTree = "<group>"; };
+		642E186D262236B800C81F16 /* NotesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesViewController.swift; sourceTree = "<group>"; };
+		643E246C26682AD400EF4FE3 /* lines-large.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "lines-large.png"; sourceTree = "<group>"; };
+		643E246D26682AD400EF4FE3 /* dots-large.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "dots-large.png"; path = "../../Figures/dots-large.png"; sourceTree = "<group>"; };
+		643F84E826127E89004DBFAC /* AddNewItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewItemViewController.swift; sourceTree = "<group>"; };
+		643F84ED261361E8004DBFAC /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		645A0CD126336E11007D5F86 /* InfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
+		645A0CD626360561007D5F86 /* NewNoteOptionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewNoteOptionsViewController.swift; sourceTree = "<group>"; };
+		645D93B8264BBCDA00F6B313 /* Never_late 6.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "Never_late 6.xcdatamodel"; sourceTree = "<group>"; };
+		646664642631A05A00CA5CEA /* Never_late 5.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "Never_late 5.xcdatamodel"; sourceTree = "<group>"; };
+		6479728E2638114C0033128D /* SortViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SortViewController.swift; sourceTree = "<group>"; };
+		647972962638A61D0033128D /* DrawingModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawingModel.swift; sourceTree = "<group>"; };
+		647972AB263C04290033128D /* lines.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lines.png; sourceTree = "<group>"; };
+		647972B0263C9C290033128D /* FilterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterViewController.swift; sourceTree = "<group>"; };
+		647972BB2643C92F0033128D /* CalendarModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarModel.swift; sourceTree = "<group>"; };
+		6497F517266431F5006BA792 /* Never_late 7.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "Never_late 7.xcdatamodel"; sourceTree = "<group>"; };
+		64AE8C1A2626295F00326FBC /* Never_late 3.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "Never_late 3.xcdatamodel"; sourceTree = "<group>"; };
+		64DD5825264467E2008C7543 /* FullCalendarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullCalendarViewController.swift; sourceTree = "<group>"; };
+		64E6AA2A2678F28A009FCA39 /* dots2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = dots2.png; path = ../../Figures/dots2.png; sourceTree = "<group>"; };
+		64E6AA2C2678F33E009FCA39 /* dots.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dots.png; sourceTree = "<group>"; };
+		64F0CEA5262E25A1000A5810 /* Never_late 4.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "Never_late 4.xcdatamodel"; sourceTree = "<group>"; };
+		64F11147260F48E900E6FEA7 /* Never late.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Never late.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		64F1114A260F48E900E6FEA7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		64F1114C260F48E900E6FEA7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		64F1114E260F48E900E6FEA7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		64F11151260F48E900E6FEA7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		64F11154260F48E900E6FEA7 /* Never_late.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Never_late.xcdatamodel; sourceTree = "<group>"; };
+		64F11156260F48EA00E6FEA7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		64F11159260F48EA00E6FEA7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		64F1115B260F48EA00E6FEA7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		64F11160260F48EA00E6FEA7 /* Never lateTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Never lateTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		64F11164260F48EA00E6FEA7 /* Never_lateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Never_lateTests.swift; sourceTree = "<group>"; };
+		64F11166260F48EA00E6FEA7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		64F1116B260F48EA00E6FEA7 /* Never lateUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Never lateUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		64F1116F260F48EA00E6FEA7 /* Never_lateUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Never_lateUITests.swift; sourceTree = "<group>"; };
+		64F11171260F48EA00E6FEA7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		64F11144260F48E900E6FEA7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		64F1115D260F48EA00E6FEA7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		64F11168260F48EA00E6FEA7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		64F1113E260F48E900E6FEA7 = {
+			isa = PBXGroup;
+			children = (
+				64F11149260F48E900E6FEA7 /* Never late */,
+				64F11163260F48EA00E6FEA7 /* Never lateTests */,
+				64F1116E260F48EA00E6FEA7 /* Never lateUITests */,
+				64F11148260F48E900E6FEA7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		64F11148260F48E900E6FEA7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				64F11147260F48E900E6FEA7 /* Never late.app */,
+				64F11160260F48EA00E6FEA7 /* Never lateTests.xctest */,
+				64F1116B260F48EA00E6FEA7 /* Never lateUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		64F11149260F48E900E6FEA7 /* Never late */ = {
+			isa = PBXGroup;
+			children = (
+				643F84E826127E89004DBFAC /* AddNewItemViewController.swift */,
+				64F1114A260F48E900E6FEA7 /* AppDelegate.swift */,
+				647972BB2643C92F0033128D /* CalendarModel.swift */,
+				647972962638A61D0033128D /* DrawingModel.swift */,
+				643F84ED261361E8004DBFAC /* DataManager.swift */,
+				645A0CD126336E11007D5F86 /* InfoViewController.swift */,
+				647972B0263C9C290033128D /* FilterViewController.swift */,
+				64DD5825264467E2008C7543 /* FullCalendarViewController.swift */,
+				6404080D2613C433008978D5 /* LoadingViewController.swift */,
+				642E186D262236B800C81F16 /* NotesViewController.swift */,
+				645A0CD626360561007D5F86 /* NewNoteOptionsViewController.swift */,
+				64F1114C260F48E900E6FEA7 /* SceneDelegate.swift */,
+				6479728E2638114C0033128D /* SortViewController.swift */,
+				64F1114E260F48E900E6FEA7 /* ViewController.swift */,
+				64F11150260F48E900E6FEA7 /* Main.storyboard */,
+				647972AB263C04290033128D /* lines.png */,
+				64E6AA2C2678F33E009FCA39 /* dots.png */,
+				64E6AA2A2678F28A009FCA39 /* dots2.png */,
+				643E246D26682AD400EF4FE3 /* dots-large.png */,
+				643E246C26682AD400EF4FE3 /* lines-large.png */,
+				6404081226165E7F008978D5 /* FrontPicture_Never_late.png */,
+				64F11156260F48EA00E6FEA7 /* Assets.xcassets */,
+				64F11158260F48EA00E6FEA7 /* LaunchScreen.storyboard */,
+				64F1115B260F48EA00E6FEA7 /* Info.plist */,
+				64F11153260F48E900E6FEA7 /* Never_late.xcdatamodeld */,
+			);
+			path = "Never late";
+			sourceTree = "<group>";
+		};
+		64F11163260F48EA00E6FEA7 /* Never lateTests */ = {
+			isa = PBXGroup;
+			children = (
+				64F11164260F48EA00E6FEA7 /* Never_lateTests.swift */,
+				64F11166260F48EA00E6FEA7 /* Info.plist */,
+			);
+			path = "Never lateTests";
+			sourceTree = "<group>";
+		};
+		64F1116E260F48EA00E6FEA7 /* Never lateUITests */ = {
+			isa = PBXGroup;
+			children = (
+				64F1116F260F48EA00E6FEA7 /* Never_lateUITests.swift */,
+				64F11171260F48EA00E6FEA7 /* Info.plist */,
+			);
+			path = "Never lateUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		64F11146260F48E900E6FEA7 /* Never late */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 64F11174260F48EA00E6FEA7 /* Build configuration list for PBXNativeTarget "Never late" */;
+			buildPhases = (
+				64F11143260F48E900E6FEA7 /* Sources */,
+				64F11144260F48E900E6FEA7 /* Frameworks */,
+				64F11145260F48E900E6FEA7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Never late";
+			productName = "Never late";
+			productReference = 64F11147260F48E900E6FEA7 /* Never late.app */;
+			productType = "com.apple.product-type.application";
+		};
+		64F1115F260F48EA00E6FEA7 /* Never lateTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 64F11177260F48EA00E6FEA7 /* Build configuration list for PBXNativeTarget "Never lateTests" */;
+			buildPhases = (
+				64F1115C260F48EA00E6FEA7 /* Sources */,
+				64F1115D260F48EA00E6FEA7 /* Frameworks */,
+				64F1115E260F48EA00E6FEA7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				64F11162260F48EA00E6FEA7 /* PBXTargetDependency */,
+			);
+			name = "Never lateTests";
+			productName = "Never lateTests";
+			productReference = 64F11160260F48EA00E6FEA7 /* Never lateTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		64F1116A260F48EA00E6FEA7 /* Never lateUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 64F1117A260F48EA00E6FEA7 /* Build configuration list for PBXNativeTarget "Never lateUITests" */;
+			buildPhases = (
+				64F11167260F48EA00E6FEA7 /* Sources */,
+				64F11168260F48EA00E6FEA7 /* Frameworks */,
+				64F11169260F48EA00E6FEA7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				64F1116D260F48EA00E6FEA7 /* PBXTargetDependency */,
+			);
+			name = "Never lateUITests";
+			productName = "Never lateUITests";
+			productReference = 64F1116B260F48EA00E6FEA7 /* Never lateUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		64F1113F260F48E900E6FEA7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					64F11146260F48E900E6FEA7 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					64F1115F260F48EA00E6FEA7 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 64F11146260F48E900E6FEA7;
+					};
+					64F1116A260F48EA00E6FEA7 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 64F11146260F48E900E6FEA7;
+					};
+				};
+			};
+			buildConfigurationList = 64F11142260F48E900E6FEA7 /* Build configuration list for PBXProject "Never late" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 64F1113E260F48E900E6FEA7;
+			productRefGroup = 64F11148260F48E900E6FEA7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				64F11146260F48E900E6FEA7 /* Never late */,
+				64F1115F260F48EA00E6FEA7 /* Never lateTests */,
+				64F1116A260F48EA00E6FEA7 /* Never lateUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		64F11145260F48E900E6FEA7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				64E6AA2B2678F28C009FCA39 /* dots2.png in Resources */,
+				64F1115A260F48EA00E6FEA7 /* LaunchScreen.storyboard in Resources */,
+				64E6AA2D2678F340009FCA39 /* dots.png in Resources */,
+				643E246F26682AD500EF4FE3 /* dots-large.png in Resources */,
+				64F11157260F48EA00E6FEA7 /* Assets.xcassets in Resources */,
+				64F11152260F48E900E6FEA7 /* Main.storyboard in Resources */,
+				643E246E26682AD500EF4FE3 /* lines-large.png in Resources */,
+				647972AC263C042A0033128D /* lines.png in Resources */,
+				6404081326165E7F008978D5 /* FrontPicture_Never_late.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		64F1115E260F48EA00E6FEA7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		64F11169260F48EA00E6FEA7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		64F11143260F48E900E6FEA7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				647972B1263C9C290033128D /* FilterViewController.swift in Sources */,
+				6404080E2613C433008978D5 /* LoadingViewController.swift in Sources */,
+				64F11155260F48E900E6FEA7 /* Never_late.xcdatamodeld in Sources */,
+				6479728F2638114C0033128D /* SortViewController.swift in Sources */,
+				647972972638A61D0033128D /* DrawingModel.swift in Sources */,
+				64DD5826264467E2008C7543 /* FullCalendarViewController.swift in Sources */,
+				643F84EE261361E8004DBFAC /* DataManager.swift in Sources */,
+				64F1114F260F48E900E6FEA7 /* ViewController.swift in Sources */,
+				647972BC2643C9310033128D /* CalendarModel.swift in Sources */,
+				645A0CD726360561007D5F86 /* NewNoteOptionsViewController.swift in Sources */,
+				645A0CD226336E11007D5F86 /* InfoViewController.swift in Sources */,
+				642E186E262236B900C81F16 /* NotesViewController.swift in Sources */,
+				64F1114B260F48E900E6FEA7 /* AppDelegate.swift in Sources */,
+				643F84E926127E89004DBFAC /* AddNewItemViewController.swift in Sources */,
+				64F1114D260F48E900E6FEA7 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		64F1115C260F48EA00E6FEA7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				64F11165260F48EA00E6FEA7 /* Never_lateTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		64F11167260F48EA00E6FEA7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				64F11170260F48EA00E6FEA7 /* Never_lateUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		64F11162260F48EA00E6FEA7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 64F11146260F48E900E6FEA7 /* Never late */;
+			targetProxy = 64F11161260F48EA00E6FEA7 /* PBXContainerItemProxy */;
+		};
+		64F1116D260F48EA00E6FEA7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 64F11146260F48E900E6FEA7 /* Never late */;
+			targetProxy = 64F1116C260F48EA00E6FEA7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		64F11150260F48E900E6FEA7 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				64F11151260F48E900E6FEA7 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		64F11158260F48EA00E6FEA7 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				64F11159260F48EA00E6FEA7 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		64F11172260F48EA00E6FEA7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		64F11173260F48EA00E6FEA7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		64F11175260F48EA00E6FEA7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 3;
+				DEVELOPMENT_TEAM = MCETVWGX26;
+				INFOPLIST_FILE = "Never late/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.eliaskristensson.Never-late";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		64F11176260F48EA00E6FEA7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 3;
+				DEVELOPMENT_TEAM = MCETVWGX26;
+				INFOPLIST_FILE = "Never late/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.eliaskristensson.Never-late";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Release;
+		};
+		64F11178260F48EA00E6FEA7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MCETVWGX26;
+				INFOPLIST_FILE = "Never lateTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.eliaskristensson.Never-lateTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Never late.app/Never late";
+			};
+			name = Debug;
+		};
+		64F11179260F48EA00E6FEA7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MCETVWGX26;
+				INFOPLIST_FILE = "Never lateTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.eliaskristensson.Never-lateTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Never late.app/Never late";
+			};
+			name = Release;
+		};
+		64F1117B260F48EA00E6FEA7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MCETVWGX26;
+				INFOPLIST_FILE = "Never lateUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.eliaskristensson.Never-lateUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Never late";
+			};
+			name = Debug;
+		};
+		64F1117C260F48EA00E6FEA7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MCETVWGX26;
+				INFOPLIST_FILE = "Never lateUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.eliaskristensson.Never-lateUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Never late";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		64F11142260F48E900E6FEA7 /* Build configuration list for PBXProject "Never late" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				64F11172260F48EA00E6FEA7 /* Debug */,
+				64F11173260F48EA00E6FEA7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		64F11174260F48EA00E6FEA7 /* Build configuration list for PBXNativeTarget "Never late" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				64F11175260F48EA00E6FEA7 /* Debug */,
+				64F11176260F48EA00E6FEA7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		64F11177260F48EA00E6FEA7 /* Build configuration list for PBXNativeTarget "Never lateTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				64F11178260F48EA00E6FEA7 /* Debug */,
+				64F11179260F48EA00E6FEA7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		64F1117A260F48EA00E6FEA7 /* Build configuration list for PBXNativeTarget "Never lateUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				64F1117B260F48EA00E6FEA7 /* Debug */,
+				64F1117C260F48EA00E6FEA7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		64F11153260F48E900E6FEA7 /* Never_late.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				6497F517266431F5006BA792 /* Never_late 7.xcdatamodel */,
+				645D93B8264BBCDA00F6B313 /* Never_late 6.xcdatamodel */,
+				646664642631A05A00CA5CEA /* Never_late 5.xcdatamodel */,
+				64F0CEA5262E25A1000A5810 /* Never_late 4.xcdatamodel */,
+				64AE8C1A2626295F00326FBC /* Never_late 3.xcdatamodel */,
+				642E1869261D07F500C81F16 /* Never_late 2.xcdatamodel */,
+				64F11154260F48E900E6FEA7 /* Never_late.xcdatamodel */,
+			);
+			currentVersion = 6497F517266431F5006BA792 /* Never_late 7.xcdatamodel */;
+			path = Never_late.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 64F1113F260F48E900E6FEA7 /* Project object */;
+}
