@@ -33,6 +33,7 @@
 		64F1115A260F48EA00E6FEA7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 64F11158260F48EA00E6FEA7 /* LaunchScreen.storyboard */; };
 		64F11165260F48EA00E6FEA7 /* Never_lateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64F11164260F48EA00E6FEA7 /* Never_lateTests.swift */; };
 		64F11170260F48EA00E6FEA7 /* Never_lateUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64F1116F260F48EA00E6FEA7 /* Never_lateUITests.swift */; };
+		7CD5F02B2827156A0002F680 /* CheckBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CD5F02A2827156A0002F680 /* CheckBox.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -91,6 +92,7 @@
 		64F1116B260F48EA00E6FEA7 /* Never lateUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Never lateUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		64F1116F260F48EA00E6FEA7 /* Never_lateUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Never_lateUITests.swift; sourceTree = "<group>"; };
 		64F11171260F48EA00E6FEA7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7CD5F02A2827156A0002F680 /* CheckBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckBox.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,6 +146,7 @@
 				643F84E826127E89004DBFAC /* AddNewItemViewController.swift */,
 				64F1114A260F48E900E6FEA7 /* AppDelegate.swift */,
 				647972BB2643C92F0033128D /* CalendarModel.swift */,
+				7CD5F02A2827156A0002F680 /* CheckBox.swift */,
 				647972962638A61D0033128D /* DrawingModel.swift */,
 				643F84ED261361E8004DBFAC /* DataManager.swift */,
 				645A0CD126336E11007D5F86 /* InfoViewController.swift */,
@@ -324,6 +327,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7CD5F02B2827156A0002F680 /* CheckBox.swift in Sources */,
 				647972B1263C9C290033128D /* FilterViewController.swift in Sources */,
 				6404080E2613C433008978D5 /* LoadingViewController.swift in Sources */,
 				64F11155260F48E900E6FEA7 /* Never_late.xcdatamodeld in Sources */,

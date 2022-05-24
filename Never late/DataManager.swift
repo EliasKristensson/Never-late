@@ -75,7 +75,7 @@ class DataManager {
             } catch let error as NSError {
                 print("failed to save event with error : \(error)")
             }
-            print(event)
+            
             print("Saved Event")
         }
         
@@ -113,9 +113,9 @@ class DataManager {
         for item in items {
             context.delete(item)
         }
-        for calendar in storedCalendars {
-            context.delete(calendar)
-        }
+//        for calendar in storedCalendars {
+//            context.delete(calendar)
+//        }
         saveCoreData()
     }
     

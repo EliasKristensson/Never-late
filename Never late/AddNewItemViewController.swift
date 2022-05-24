@@ -171,7 +171,6 @@ class AddNewItemViewController: UIViewController, UITableViewDelegate, UITableVi
                 
             } else {
                 
-                
                 if itemType == "Reminder" {
                     
                     UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .badge, .sound], completionHandler: { success, error in
@@ -205,6 +204,7 @@ class AddNewItemViewController: UIViewController, UITableViewDelegate, UITableVi
                 newItem.id = uuid
                 newItem.alert = eventAlarmSwitch.isOn
                 newItem.recurring = recurringSwitch.isOn
+                newItem.completed = false
                 
                 if eventAlarmSwitch.isOn {
                     newItem.alertTime = Double(alarmTimes[eventAlarmTimes.selectedSegmentIndex])

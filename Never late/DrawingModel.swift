@@ -208,7 +208,6 @@ class DrawingModelController {
     /// Load the data model from persistent storage
     func loadDrawingModel() {
         print("loadDrawingModel()")
-        var worked = true
         
         let url = saveURL
         serializationQueue.async {
@@ -261,6 +260,11 @@ class DrawingModelController {
         
         thumbnails.append(UIImage())
         updateDrawing(newDrawing, at: drawingModel.drawings.count-1, at: 0)
+        
+        //TESTAR LÄGGA TILL DETTA, VILL ATT DEN SKA UPPDATERA DIREKT EFTER NY DRAWING HAR GJORTS
+        DispatchQueue.main.async {
+            self.didChange()
+        }
     }
     
     func newSubDrawing(mainIndex: Int) {

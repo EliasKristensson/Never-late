@@ -23,6 +23,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             UITableView.appearance().sectionHeaderTopPadding = 0.0
         }
         
+        //FIX PROBLEMS WITH NAVIGATION BAR
+        if #available(iOS 15.0, *) {
+            let navigationBarAppearance = UINavigationBarAppearance()
+            navigationBarAppearance.configureWithDefaultBackground()
+            UINavigationBar.appearance().standardAppearance = navigationBarAppearance
+            UINavigationBar.appearance().compactAppearance = navigationBarAppearance
+            UINavigationBar.appearance().scrollEdgeAppearance = navigationBarAppearance
+        }
+
+        
         // Override point for customization after application launch.
         
 //        CKContainer.default().accountStatus{ status, error in

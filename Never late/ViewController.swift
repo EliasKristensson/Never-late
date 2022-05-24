@@ -137,6 +137,7 @@ class ListCell: UITableViewCell {
 class ItemCell: UITableViewCell {
     
     var event: Item!
+    var checkBox: CheckBox!
     
     @IBOutlet weak var dateLabel: UILabel!
     @IBOutlet weak var mainLabel: UILabel!
@@ -176,6 +177,9 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
     var dataManager = DataManager()
     var appDelegate: AppDelegate!
     
+    let checkedImage = UIImage(named: "checkboxChecked")
+    let uncheckedImage = UIImage(named: "checkboxUnchecked")
+    
     var currentDay = Calendar.current.component(.day, from: Date())
     var currentDayOfWeek = Calendar.current.component(.weekday, from: Date())-1
 
@@ -190,7 +194,6 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
     
     var refreshTimer: Timer!
     var saveTimer: Timer!
-    var updateTimer: Timer!
     
     var expandedType = "Todo"
     var sortOption = "Date added"
@@ -269,6 +272,7 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
     @IBOutlet weak var nextFullNoteButton: UIButton!
     @IBOutlet weak var prevFullNoteButton: UIButton!
     @IBOutlet weak var noteBackgroundView: UIView!
+    @IBOutlet weak var switchBetweenNotesTodo: UISegmentedControl!
     
     
     // MARK:IBACTIONS
@@ -512,7 +516,32 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
         }
     }
     
+    @IBAction func checkboxTapped(_ sender: Any) {
+        print("checkBoxTapped()")
+        
+        let button = sender as! UIButton
+        if let todo = todos.first(where: {$0.id == button.accessibilityIdentifier}) {
+            todo.completed.toggle()
+            dataManager.saveCoreData()
+            updateView()
+        }
+
+    }
     
+    @IBAction func switchTapped(_ sender: Any) {
+        
+        if toDoView.isHidden {
+            toDoView.isHidden = false
+            expandedNotesView.isHidden = true
+        } else {
+            toDoView.isHidden = true
+            expandedNotesView.isHidden = false
+        }
+                
+//        displayManager()
+//        updateView()
+
+    }
     
     
     
@@ -1258,7 +1287,6 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
     func setSelectedNoteFromController(id: Date) {
         print("setSelectedNoteFromController()")
         
-        print(id)
         if let index = drawingModelController.dateAdded.firstIndex(where: {$0 == id} ) {
             print(drawingModelController.titles[index])
             let tmp = NoteItem(drawings: drawingModelController.drawings[index], title: drawingModelController.titles[index], dateAdded: drawingModelController.dateAdded[index], dateModified: drawingModelController.dateModified[index], category: drawingModelController.categories[index], thumbnail: drawingModelController.thumbnails[index], index: index)
@@ -1266,13 +1294,23 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
         } else {
             selectedNote = nil
         }
-        print(selectedNote)
     }
     
     func setItemCell(item: Item, cell: ItemCell) -> ItemCell {
+        print("setItemCell()")
+        
         cell.event = item
         cell.mainLabel.text = item.title
         cell.layer.cornerRadius = 5
+        cell.tickBox.accessibilityIdentifier = item.id
+
+        if item.completed == true {
+            cell.tickBox.setImage(checkedImage, for: .normal)
+            cell.contentView.alpha = 0.5
+        } else {
+            cell.tickBox.setImage(uncheckedImage, for: .normal)
+            cell.contentView.alpha = 1
+        }
         
         let formatter = DateFormatter()
         formatter.dateFormat = "MMM dd"
@@ -1282,24 +1320,25 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
             cell.dateLabel.text = ""
         }
 
-        if item.completed {
-            cell.tickBox.setImage(UIImage(systemName: "checkmark.circle.fill"), for: .normal)
-            cell.contentView.alpha = 0.5
-            
-        } else {
-            switch item.priority {
-            case "Low":
-                cell.tickBox.setImage(UIImage(systemName: "circle"), for: .normal)
-            case "Medium":
-                cell.tickBox.setImage(UIImage(systemName: "smallcircle.fill.circle"), for: .normal)
-            case "High":
-                cell.tickBox.setImage(UIImage(systemName: "largecircle.fill.circle"), for: .normal)
-            default:
-                cell.tickBox.setImage(UIImage(systemName: "circle"), for: .normal)
-            }
-            
-            cell.contentView.alpha = 1
-        }
+//        if item.completed {
+//            cell.checkBox.isChecked = true
+//            cell.tickBox.setImage(UIImage(systemName: "checkmark.circle.fill"), for: .normal)
+//            cell.contentView.alpha = 0.5
+//
+//        } else {
+//            switch item.priority {
+//            case "Low":
+//                cell.tickBox.setImage(UIImage(systemName: "circle"), for: .normal)
+//            case "Medium":
+//                cell.tickBox.setImage(UIImage(systemName: "smallcircle.fill.circle"), for: .normal)
+//            case "High":
+//                cell.tickBox.setImage(UIImage(systemName: "largecircle.fill.circle"), for: .normal)
+//            default:
+//                cell.tickBox.setImage(UIImage(systemName: "circle"), for: .normal)
+//            }
+//
+//            cell.contentView.alpha = 1
+//        }
         
         return cell
     }
@@ -1366,35 +1405,35 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
                 
         let alpha = CGFloat(0.4)
         
-        toDoTV.backgroundColor = .clear
-        toDoView.layer.cornerRadius = 10
-        toDoView.layer.borderWidth = 2
-        toDoView.backgroundColor = UIColor(red: 0, green: 0, blue: 1, alpha: alpha)
-        toDoView.layer.borderColor = CGColor(red: 0, green: 0, blue: 1, alpha: 1)
+        //toDoTV.backgroundColor = .clear
+        //toDoView.layer.cornerRadius = 10
+        //toDoView.layer.borderWidth = 2
+        //toDoView.backgroundColor = UIColor(red: 0, green: 0, blue: 1, alpha: alpha)
+        //toDoView.layer.borderColor = CGColor(red: 0, green: 0, blue: 1, alpha: 1)
         
-        deadlineTV.backgroundColor = .clear
-        deadlineView.layer.cornerRadius = 10
-        deadlineView.layer.borderWidth = 2
-        deadlineView.backgroundColor = UIColor(red: 1, green: 0, blue: 0, alpha: alpha)
-        deadlineView.layer.borderColor = CGColor(red: 1, green: 0, blue: 0, alpha: 1)
+        //deadlineTV.backgroundColor = .clear
+        //deadlineView.layer.cornerRadius = 10
+        //deadlineView.layer.borderWidth = 2
+        //deadlineView.backgroundColor = UIColor(red: 1, green: 0, blue: 0, alpha: alpha)
+        //deadlineView.layer.borderColor = CGColor(red: 1, green: 0, blue: 0, alpha: 1)
         
-        remindersTV.backgroundColor = .clear
-        remindersView.layer.cornerRadius = 10
-        remindersView.layer.borderWidth = 2
-        remindersView.backgroundColor = UIColor(red: 1, green: 1, blue: 0, alpha: alpha)
-        remindersView.layer.borderColor = CGColor(red: 1, green: 1, blue: 0, alpha: 1)
+        //remindersTV.backgroundColor = .clear
+        //remindersView.layer.cornerRadius = 10
+        //remindersView.layer.borderWidth = 2
+        //remindersView.backgroundColor = UIColor(red: 1, green: 1, blue: 0, alpha: alpha)
+        //remindersView.layer.borderColor = CGColor(red: 1, green: 1, blue: 0, alpha: 1)
 
-        listTV.backgroundColor = .clear
-        listsView.layer.cornerRadius = 10
-        listsView.layer.borderWidth = 2
-        listsView.backgroundColor = UIColor(red: 0, green: 1, blue: 0, alpha: alpha)
-        listsView.layer.borderColor = CGColor(red: 0, green: 1, blue: 0, alpha: 1)
+        //listTV.backgroundColor = .clear
+        //listsView.layer.cornerRadius = 10
+        //listsView.layer.borderWidth = 2
+        //listsView.backgroundColor = UIColor(red: 0, green: 1, blue: 0, alpha: alpha)
+        //listsView.layer.borderColor = CGColor(red: 0, green: 1, blue: 0, alpha: 1)
 
-        listView.layer.cornerRadius = 10
-        listView.layer.borderWidth = 2
-        listView.layer.borderColor = CGColor(red: 0, green: 0, blue: 0, alpha: 1)
-        listView.backgroundColor = UIColor(red: 1, green: 1, blue: 1, alpha: 1)
-        listView.isHidden = true
+        //listView.layer.cornerRadius = 10
+        //listView.layer.borderWidth = 2
+        //listView.layer.borderColor = CGColor(red: 0, green: 0, blue: 0, alpha: 1)
+        //listView.backgroundColor = UIColor(red: 1, green: 1, blue: 1, alpha: 1)
+        //listView.isHidden = true
         
         displayManager()
         
@@ -1562,12 +1601,10 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
         super.viewWillTransition(to: size, with: coordinator)
         if UIDevice.current.orientation.isPortrait {
             print("portrait")
-            print(notesCV.bounds)
 //            notesCV.bounds = CGRect(x: 0, y: 0, width: view.bounds.width, height: view.bounds.height)
 //            performSegue(withIdentifier: "fullCalendarViewSegue", sender: self)
         } else {
             print("landscape")
-            print(notesCV.bounds)
 //            notesCV.bounds = CGRect(x: 0, y: 0, width: view.bounds.width/2, height: view.bounds.height)
         }
         updateView()
@@ -1696,12 +1733,13 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
         return 1
     }
     
-    
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         if tableView == self.notesTV {
             return 123
         } else if tableView == self.expandedNotesTV {
             return 123
+        } else if tableView == self.toDoTV {
+            return 60
         } else {
             return 20
         }
@@ -1714,7 +1752,7 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
             var cell = tableView.dequeueReusableCell(withIdentifier: "todoCell") as! ItemCell
             
             cell = setItemCell(item: todos[indexPath.section], cell: cell)
-            
+
             return cell
           
         } else if tableView == self.deadlineTV {
@@ -1955,10 +1993,10 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
                         self.drawingModelController.dateModified.remove(at: index)
 
                         self.drawingModelController.saveDrawingModel()
-//                        self.drawingModelController.loadDrawingModel()
                     }
                 }
                 
+                self.updateView()
                 completionHandler(true)
             }
             
